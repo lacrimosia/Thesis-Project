@@ -2,17 +2,18 @@ import { Component, OnInit, Input, Output } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
-  selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.css'],
+  selector: 'app-learn',
+  templateUrl: './learn.component.html',
+  styleUrls: ['./learn.component.css'],
   providers: [DataService]
 })
-export class InfoComponent implements OnInit {
+export class LearnComponent implements OnInit {
+   @Input() heading;
+   @Input() slides;
 
- @Input() title;
- @Input() description;
   constructor() { }
 
   ngOnInit() {
   }
+
 }

@@ -1,5 +1,12 @@
 <div class="main">
   <h1>Main layer</h1>
-  <app-info [myname]="title"></app-info>
+  <app-info [title]="data?.intro?.title" [description]="data?.intro?.info"></app-info>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <app-learn [heading]="data?.information?.title" [slides]="data?.information?.slides"></app-learn>
+      </div>
+    </div>
+  </div>
 </div>
 

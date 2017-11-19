@@ -12,7 +12,7 @@ import { DataService } from './data.service';
 
 
 export class AppComponent implements OnInit {
-  title = "";
+  data = "";
 
   // Inject HttpClient into your component or service.
   constructor(private dataService: DataService) {}
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   	// Make the HTTP request:
     this.dataService.getData(url).subscribe(data => {
       // Read the result field from the JSON response.
-      this.title = data.intro.title;
+      this.data = data;
     });
   }
 

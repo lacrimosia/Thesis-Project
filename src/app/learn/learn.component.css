@@ -1,0 +1,18 @@
+h3, p{
+	color: #000000;
+}
+
+/* carousel buttons */
+.carousel-indicators li, .active{
+	background-color: rgba(0,0,0,1) !important;
+}
+
+ngb-carousel{
+	max-height: 300px;
+	border: 1px solid red;
+}
+
+img{
+	max-width: 300px;
+	height: auto;
+}
