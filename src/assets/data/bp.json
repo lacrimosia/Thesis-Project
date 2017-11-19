@@ -24,14 +24,18 @@
 		]
 	},
 	"identify":{
+		"title": "Parts of a blood Pressure Machine",
 		"instructions": "Click any of the dots to learn more about the components of a blood pressure machine.",
+		"background": "", 
 		"components":[
 		 {
 			"position":{
 				"x": "",
 				"y": ""
 			},
-			"image": "",
+			"popover": "top",
+			"name":"Stethoscope",
+			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740778918/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/stethoscope1.jpg?height=234&width=400",
 			"description": "Blah..."
 		  },
 		  {
@@ -39,7 +43,9 @@
 				"x": "",
 				"y": ""
 			},
-			"image": "",
+			"popover": "bottom",
+			"name":"Cuff",
+			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
 			"description": "Blah..."
 		  }
 		]

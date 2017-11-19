@@ -9,13 +9,15 @@ import { Http ,HttpModule} from '@angular/http';
 import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
 import { LearnComponent } from './learn/learn.component';
+import { GraphicComponent } from './graphic/graphic.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoComponent,
-    LearnComponent
+    LearnComponent,
+    GraphicComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<h1>{{heading}}</h1>
+<p>{{info}}</p>
+<button type="button" class="btn btn-primary"  *ngFor="let c of components" placement="{{c.popover}}"
+        ngbPopover="{{c.description}}" popoverTitle={{c.name}}>
+  {{c.name}}
+</button>
