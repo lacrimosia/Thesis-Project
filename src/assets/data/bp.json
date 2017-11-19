@@ -1,0 +1,44 @@
+{
+	"intro":{
+		"title": "Taking Blood Pressure Interactive",
+		"info": "description here..."
+	}, 
+	"information":{
+		"title": "Learning about Blood Pressure",
+		"info":[
+			{
+				"image": "link",
+				"description": ""
+			},
+			{
+				"image": "link",
+				"description": ""
+			},
+			{
+				"image": "link",
+				"description": ""
+			}
+		]
+	},
+	"identify":{
+		"instructions": "Click any of the dots to learn more about the components of a blood pressure machine.",
+		"components":[
+		 {
+			"position":{
+				"x": "",
+				"y": ""
+			},
+			"image": "",
+			"description": "Blah..."
+		  },
+		  {
+			"position":{
+				"x": "",
+				"y": ""
+			},
+			"image": "",
+			"description": "Blah..."
+		  }
+		]
+	}
+}
