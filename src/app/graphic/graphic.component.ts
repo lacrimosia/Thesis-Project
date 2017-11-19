@@ -9,14 +9,24 @@ import { DataService } from '../data.service';
 })
 export class GraphicComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
-  @Input() heading;
-  @Input() info;
-  @Input() background;
-  @Input() components;
+  //@Input() heading;
+  //@Input() info;
+  //@Input() background;
+  //@Input() components;
+  data = "";
 
   ngOnInit() {
+  	this.getData("../assets/data/bp.json");
+  }
+
+  getData(url){
+  	// Make the HTTP request:
+    this.dataService.getData(url).subscribe(data => {
+      // Read the result field from the JSON response.
+      this.data = data;
+    });
   }
 
 }

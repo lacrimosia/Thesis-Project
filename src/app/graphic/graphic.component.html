@@ -1,6 +1,6 @@
-<h1>{{heading}}</h1>
-<p>{{info}}</p>
-<button type="button" class="btn btn-primary"  *ngFor="let c of components" placement="{{c.popover}}"
+<h1>{{data?.identify?.title}}</h1>
+<p>{{data?.identify?.instructions}}</p>
+<button type="button" class="btn btn-primary"  *ngFor="let c of data?.identify?.components" placement="{{c.popover}}"
         ngbPopover="{{c.description}}" popoverTitle={{c.name}}>
   {{c.name}}
 </button>

@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
 import { LearnComponent } from './learn/learn.component';
 import { GraphicComponent } from './graphic/graphic.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { PlayComponent } from './play/play.component';
 
 
 @NgModule({
@@ -17,12 +19,14 @@ import { GraphicComponent } from './graphic/graphic.component';
     AppComponent,
     InfoComponent,
     LearnComponent,
-    GraphicComponent
+    GraphicComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [HttpModule],
   bootstrap: [AppComponent]

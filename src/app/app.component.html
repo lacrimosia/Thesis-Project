@@ -1,19 +1,18 @@
 <div class="main">
-  <h1>Main layer</h1>
-  <app-info [title]="data?.intro?.title" [description]="data?.intro?.info"></app-info>
-  <div class="container">
+<a href="/intro" role="button">Intro</a>
+<a href="/learn" role="button">Learn</a>
+<a href="/try" role="button">Try</a>
+<a href="/play" role="button">Play</a>
+
+<div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12">
-        <app-learn [heading]="data?.information?.title" [slides]="data?.information?.slides"></app-learn>
+          <router-outlet></router-outlet>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <app-graphic [heading]="data?.identify?.title" [info]="data?.identify?.instructions" [background]="data?.identify?.background" [components]="data?.identify?.components"></app-graphic>
-      </div>
-    </div>
-  </div>
+</div>
+  <!--<app-info [title]="data?.intro?.title" [description]="data?.intro?.info"></app-info>
+  <app-learn [heading]="data?.information?.title" [slides]="data?.information?.slides"></app-learn>
+  <app-graphic [heading]="data?.identify?.title" [info]="data?.identify?.instructions" [background]="data?.identify?.background" [components]="data?.identify?.components"></app-graphic>-->
 </div>
 
