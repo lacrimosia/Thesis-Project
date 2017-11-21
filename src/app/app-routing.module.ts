@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'learn', component: LearnComponent },
   { path: 'try', component: GraphicComponent },
   { path: 'play', component: PlayComponent },
-  { path: '', redirectTo: '/intro', pathMatch: 'full' }
+  { path: 'thesis', redirectTo: 'intro', pathMatch: 'full' }
 ];
 
 @NgModule({
