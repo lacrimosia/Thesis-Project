@@ -16,6 +16,7 @@ export class GraphicComponent implements OnInit {
   //@Input() background;
   //@Input() components;
   data = "";
+  show = false;
 
   ngOnInit() {
   	this.getData("../assets/data/bp.json");

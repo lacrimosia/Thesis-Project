@@ -13,6 +13,7 @@
 	<style>
 	  body{
 		background: #431e75;
+		opacity: 0.7;
 	   }
 		.loading{
 			max-width:15%;
@@ -21,33 +22,8 @@
   			left: 50%;
   			transform: translate(-50%, -50%);
 		}
-
-		.d {
-			color: #ffffff;
-			font-size: 4em;
-		}
-
-	@keyframes dots {
-    50% {
-      transform: translateY(-.4rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  .d {
-    animation: dots 1.5s ease-out infinite;
-  }
-  .d-2 {
-    animation-delay: .5s;
-  }
-  .d-3 {
-    animation-delay: 1s;
-  }
 	</style>
   <img src="assets/symbol-white.png" class="loading"/>
-  <span class="d">.</span><span class="d d-2">.</span><span class="d d-3">.</span>
   </app-root>
 </body>
 </html>

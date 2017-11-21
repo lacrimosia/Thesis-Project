@@ -1,0 +1,16 @@
+.graphicBp{
+	min-width: 75%;
+	width: 100%;
+	height: 100vh;
+	background: url("../../assets/bp-map.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	transition: opacity 2s linear 1s;
+}

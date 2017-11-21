@@ -26,12 +26,12 @@
 	"identify":{
 		"title": "Parts of a blood Pressure Machine",
 		"instructions": "Click any of the dots to learn more about the components of a blood pressure machine.",
-		"background": "", 
+		"background": "../bp-map.png", 
 		"components":[
 		 {
 			"position":{
-				"x": "",
-				"y": ""
+				"x": "75",
+				"y": "25"
 			},
 			"popover": "top",
 			"name":"Stethoscope",
@@ -40,13 +40,13 @@
 		  },
 		  {
 			"position":{
-				"x": "",
-				"y": ""
+				"x": "7",
+				"y": "45"
 			},
-			"popover": "bottom",
+			"popover": "top",
 			"name":"Cuff",
 			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
-			"description": "Blah..."
+			"description": "The cuff is designed to hold the bladder around the limb during measurement. A properly designed cuff will ensure proper placement and positioning – essential for accurate measurement. "
 		  }
 		]
 	}
