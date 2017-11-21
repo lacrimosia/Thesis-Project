@@ -3,7 +3,7 @@
 
 <div class="overlay" *ngIf="show==true"></div>
 <button type="button" class="btn btn-primary"  *ngFor="let c of data?.identify?.components" placement="{{c.popover}}" [ngStyle]="{'position': 'relative', 'top': c.position.y+'%', 'left': c.position.x+'%'}"
-        ngbPopover="{{c.description}}" popoverTitle="{{c.name}}" triggers="mouseenter:mouseleave" (mouseenter)="show=!show" (mouseleave)="show=!show">
+        ngbPopover="{{c.description}}" popoverTitle="{{c.name}}" triggers="mouseenter:mouseleave" (mouseleave)="show=!show" (mouseenter)="show=!show">
   {{c.name}}
 </button>
 <div class="graphicBp"></div>

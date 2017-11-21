@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import {NgbPopover} from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, Input, Output, ViewChild } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -18,6 +19,8 @@ export class GraphicComponent implements OnInit {
   data = "";
   show = false;
 
+//  @ViewChild('button') public popover: NgbPopover;
+
   ngOnInit() {
   	this.getData("../assets/data/bp.json");
   }
@@ -29,5 +32,14 @@ export class GraphicComponent implements OnInit {
       this.data = data;
     });
   }
+/*
+  public openBox(): void {
+    const isOpen = this.popover.isOpen();
+    this.popover.close();
+    if (greeting !== this.greeting || !isOpen) {
+      this.greeting = greeting;
+      this.popover.open(greeting);
+    }
+  }*/
 
 }
