@@ -1,7 +1,7 @@
 .graphicBp{
 	min-width: 75%;
 	width: 100%;
-	height: 100vh;
+	height: 800px;
 	background: url("../../assets/bp-map.png");
 	background-repeat: no-repeat;
 	background-size: cover;

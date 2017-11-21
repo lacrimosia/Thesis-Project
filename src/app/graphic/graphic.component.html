@@ -1,9 +1,9 @@
 <h1>{{data?.identify?.title}}</h1>
 <p>{{data?.identify?.instructions}}</p>
 
-<div class="overlay" *ngIf="show==true"></div>
-<button type="button" class="btn btn-primary"  *ngFor="let c of data?.identify?.components" placement="{{c.popover}}" [ngStyle]="{'position': 'relative', 'top': c.position.y+'%', 'left': c.position.x+'%'}"
-        ngbPopover="{{c.description}}" popoverTitle="{{c.name}}" triggers="mouseenter:mouseleave" (mouseleave)="show=!show" (mouseenter)="show=!show">
-  {{c.name}}
+<div class="overlay animated fadeIn" *ngIf="show==true"></div>
+<button type="button" class="btn btn-primary"  *ngFor="let c of data?.identify?.components; let i = index;" placement="{{c.popover}}" [ngStyle]="{'position': 'relative', 'top': c.position.y+'%', 'left': c.position.x+'%'}" ngbPopover="{{c.description}}" popoverTitle="{{c.name}}" triggers="mouseenter:mouseleave" (mouseleave)="show=!show" (mouseenter)="show=!show">
+  {{i+1}}. {{c.name}}
 </button>
 <div class="graphicBp"></div>
+<!--  -->

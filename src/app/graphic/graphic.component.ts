@@ -17,7 +17,6 @@ export class GraphicComponent implements OnInit {
   //@Input() background;
   //@Input() components;
   data = "";
-  show = false;
 
 //  @ViewChild('button') public popover: NgbPopover;
 
@@ -32,14 +31,5 @@ export class GraphicComponent implements OnInit {
       this.data = data;
     });
   }
-/*
-  public openBox(): void {
-    const isOpen = this.popover.isOpen();
-    this.popover.close();
-    if (greeting !== this.greeting || !isOpen) {
-      this.greeting = greeting;
-      this.popover.open(greeting);
-    }
-  }*/
 
 }

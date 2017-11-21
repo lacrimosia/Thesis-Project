@@ -33,20 +33,55 @@
 				"x": "75",
 				"y": "25"
 			},
+			"open": false,
 			"popover": "top",
 			"name":"Stethoscope",
 			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740778918/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/stethoscope1.jpg?height=234&width=400",
-			"description": "Blah..."
+			"description": "A stethoscope is an instrument that is used to listen to sounds in the body. It has earpieces that are connected to a listening bell by flexible tubing."
 		  },
 		  {
 			"position":{
 				"x": "7",
-				"y": "45"
+				"y": "30"
 			},
+			"open": false,
 			"popover": "top",
 			"name":"Cuff",
 			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
 			"description": "The cuff is designed to hold the bladder around the limb during measurement. A properly designed cuff will ensure proper placement and positioning – essential for accurate measurement. "
+		  },
+		  {
+			"position":{
+				"x": "18",
+				"y": "20"
+			},
+			"open": false,
+			"popover": "right",
+			"name":"Manometer",
+			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
+			"description": "The portion of the sphygmomanometer that measures the air pressure in mmHg. The aneroid contains a watch-like movement that measures the air pressure applied to the cuff. Within the gauge is a series of copper/berrylium diaphragms that expand when filled with air."
+		  },
+		  {
+			"position":{
+				"x": "10",
+				"y": "60"
+			},
+			"open": false,
+			"popover": "top",
+			"name":"Bulb",
+			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
+			"description": "The bulb pumps air into the cuff. An end (check) valve prevents air from escaping. ADC’s latex-free bulbs are made from either spin cast PVC, or dip molded neoprene."
+		  },
+		  {
+			"position":{
+				"x": "9",
+				"y": "39"
+			},
+			"open": false,
+			"popover": "right",
+			"name":"Valve",
+			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
+			"description": "The deflation valve allows for controlled deflation of the cuff – critical for accurate measurement. ADC’s ADFLOW valve is machined from solid brass and plated in both nickel and chrome."
 		  }
 		]
 	}
