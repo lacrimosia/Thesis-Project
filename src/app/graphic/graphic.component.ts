@@ -21,12 +21,12 @@ export class GraphicComponent implements OnInit {
 //  @ViewChild('button') public popover: NgbPopover;
 
   ngOnInit() {
-  	this.getData("../thesis/assets/data/bp.json");
+  	this.getData();
   }
 
-  getData(url){
+  getData(){
   	// Make the HTTP request:
-    this.dataService.getData(url).subscribe(data => {
+    this.dataService.getData().subscribe(data => {
       // Read the result field from the JSON response.
       this.data = data;
     });

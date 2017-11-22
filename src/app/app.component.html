@@ -1,47 +1,46 @@
 <div class="main">
-<div class="contaniner-fluid navigationbar">
-	<div class="row">
-		<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="/thesis/"><img src="assets/symbol.png" width="30" height="30"/></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Healthcare Learning <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Modules</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Account</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-	</div>
-</div>
-
-<div class="container-fluid sidebars">
+  <div class="contaniner-fluid navigationbar">
     <div class="row">
-    <div class="horizontals col-lg-1 col-md-1 col-sm-1 col-sm-1">
-    <div class="list-group">
-  		<a href="#/intro" class="list-group-item list-group-item-action active">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/thesis/"><img src="assets/symbol.png" width="30" height="30"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Healthcare Learning <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/modules">Modules</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Account</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid sidebars">
+    <div class="row">
+      <div class="horizontals col-lg-1 col-md-1 col-sm-1 col-sm-1">
+        <div class="list-group">
+          <a href="#/intro" class="list-group-item list-group-item-action active">
     Welcome
-  		</a>
- 	 <a href="#/learn" class="list-group-item list-group-item-action">Learn</a>
-  	<a href="#/try" class="list-group-item list-group-item-action">Know</a>
-  	<a href="#/play" class="list-group-item list-group-item-action">Play</a>
-</div>
-</div>
+      </a>
+          <a href="#/learn" class="list-group-item list-group-item-action">Learn</a>
+          <a href="#/try" class="list-group-item list-group-item-action">Know</a>
+          <a href="#/play" class="list-group-item list-group-item-action">Play</a>
+        </div>
+      </div>
       <div class="col-lg-11 col-md-11 col-sm-11 col-sm-11 animated fadeIn">
-          <router-outlet></router-outlet>
+        <router-outlet>
+        </router-outlet>
       </div>
     </div>
-</div>
+  </div>
   <!--<app-info [title]="data?.intro?.title" [description]="data?.intro?.info"></app-info>
   <app-learn [heading]="data?.information?.title" [slides]="data?.information?.slides"></app-learn>
   <app-graphic [heading]="data?.identify?.title" [info]="data?.identify?.instructions" [background]="data?.identify?.background" [components]="data?.identify?.components"></app-graphic>-->
 </div>
-

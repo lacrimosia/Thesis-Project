@@ -15,12 +15,12 @@ export class LearnComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-  	this.grabInfo("../thesis/assets/data/bp.json");
+  	this.grabInfo();
   }
 
-  grabInfo(url){
+  grabInfo(){
   	// Make the HTTP request:
-    this.dataService.getData(url).subscribe(data => {
+    this.dataService.getData().subscribe(data => {
       // Read the result field from the JSON response.
       this.data = data;
     });

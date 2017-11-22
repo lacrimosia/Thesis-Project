@@ -84,5 +84,31 @@
 			"description": "The deflation valve allows for controlled deflation of the cuff – critical for accurate measurement. ADC’s ADFLOW valve is machined from solid brass and plated in both nickel and chrome."
 		  }
 		]
-	}
+	},
+	"modules":[
+		{
+			"title": "Taking Blood Pressure",
+			"image": "",
+			"description":"This course teaches basic skills of learning how to take blood pressure.",
+			"url": "/"
+		},
+		{
+			"title": "Taking CPR",
+			"image": "",
+			"description":"This course teaches basic skills of CPR.",
+			"url": "#"
+		},
+		{
+			"title": "How to treat bleeding",
+			"image": "",
+			"description":"This course teaches you how to treat bleeding.",
+			"url": "#"
+		},
+		{
+			"title": "How to treat bleeding",
+			"image": "",
+			"description":"This course teaches you how to treat bleeding.",
+			"url": "#"
+		}
+	]
 }

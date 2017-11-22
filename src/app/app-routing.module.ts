@@ -6,12 +6,14 @@ import { GraphicComponent } from './graphic/graphic.component';
 import { LearnComponent } from './learn/learn.component';
 import { InfoComponent } from './info/info.component';
 import { PlayComponent } from './play/play.component';
+import { ModulesComponent } from './modules/modules.component';
 
 const routes: Routes = [
   { path: 'intro', component: InfoComponent },
   { path: 'learn', component: LearnComponent },
   { path: 'try', component: GraphicComponent },
   { path: 'play', component: PlayComponent },
+  { path: 'modules', component: ModulesComponent },
   { path: '**', redirectTo: 'intro', pathMatch: 'full' }
 ];
 

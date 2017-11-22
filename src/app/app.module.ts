@@ -14,6 +14,7 @@ import { LearnComponent } from './learn/learn.component';
 import { GraphicComponent } from './graphic/graphic.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PlayComponent } from './play/play.component';
+import { ModulesComponent } from './modules/modules.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PlayComponent } from './play/play.component';
     InfoComponent,
     LearnComponent,
     GraphicComponent,
-    PlayComponent
+    PlayComponent,
+    ModulesComponent
   ],
   imports: [
     BrowserModule,

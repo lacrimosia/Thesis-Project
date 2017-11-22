@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { Http , HttpModule} from '@angular/http';
 import { DataService } from './data.service';
+import { Router} from '@angular/router';
 
 
 @Component({
@@ -13,17 +14,20 @@ import { DataService } from './data.service';
 
 export class AppComponent implements OnInit {
   data = "";
+  link;
 
   // Inject HttpClient into your component or service.
-  constructor(private dataService: DataService) {}
-
-  ngOnInit(): void {
-    this.getAllData("../thesis/assets/data/bp.json");
+  constructor(private dataService: DataService, private _router: Router) {
+    this.link = _router;
   }
 
-  getAllData(url){
+  ngOnInit(): void {
+    this.getAllData();
+  }
+
+  getAllData(){
   	// Make the HTTP request:
-    this.dataService.getData(url).subscribe(data => {
+    this.dataService.getData().subscribe(data => {
       // Read the result field from the JSON response.
       this.data = data;
     });

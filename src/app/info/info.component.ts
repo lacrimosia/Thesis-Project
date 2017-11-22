@@ -16,12 +16,12 @@ export class InfoComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-  	this.grabData("../thesis/assets/data/bp.json");
+  	this.grabData();
   }
 
-  grabData(url){
+  grabData(){
   	// Make the HTTP request:
-    this.dataService.getData(url).subscribe(data => {
+    this.dataService.getData().subscribe(data => {
       // Read the result field from the JSON response.
       this.data = data;
     });

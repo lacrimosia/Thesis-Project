@@ -13,10 +13,11 @@ export class DataService {
 
   constructor(private http: Http) { }
 
-  getData(url){
-      return this.http.get(url)
-      .map((data: any) => data.json())
+  url = "../assets/data/bp.json";
 
+  getData(){
+      return this.http.get(this.url)
+      .map((data: any) => data.json())
   }
 
 }
