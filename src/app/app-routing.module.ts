@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes} from '@angular/router';
 
 // components
 import { GraphicComponent } from './graphic/graphic.component';
@@ -12,11 +12,11 @@ const routes: Routes = [
   { path: 'learn', component: LearnComponent },
   { path: 'try', component: GraphicComponent },
   { path: 'play', component: PlayComponent },
-  { path: 'thesis', redirectTo: 'intro', pathMatch: 'full' }
+  { path: '**', redirectTo: 'intro', pathMatch: 'full' }
 ];
 
 @NgModule({
    exports: [ RouterModule ],
-   imports: [ RouterModule.forRoot(routes) ]
+   imports: [RouterModule.forRoot(routes)]
 })
 export class AppRoutingModule { }

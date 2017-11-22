@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.getAllData("../assets/data/bp.json");
+    this.getAllData("../thesis/assets/data/bp.json");
   }
 
   getAllData(url){

@@ -15,7 +15,7 @@ export class LearnComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-  	this.grabInfo("../assets/data/bp.json");
+  	this.grabInfo("../thesis/assets/data/bp.json");
   }
 
   grabInfo(url){

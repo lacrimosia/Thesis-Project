@@ -5,6 +5,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 // Import HttpClientModule from @angular/common/http
 import { Http ,HttpModule} from '@angular/http';
 
+import {HashLocationStrategy, Location, LocationStrategy} from '@angular/common';
+
 
 import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
@@ -28,7 +30,7 @@ import { PlayComponent } from './play/play.component';
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [HttpModule],
+  providers: [HttpModule, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
