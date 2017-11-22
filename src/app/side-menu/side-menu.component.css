@@ -12,5 +12,11 @@
 }
 
 .active{
-	background: red;
+	background: #431e75;
+	border: 1px solid #431e75;
+}
+
+.list-group a{
+	text-align: center;
+	font-size: 150%;
 }

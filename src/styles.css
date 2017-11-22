@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+button, .btn-primary{
+	background: #4D186D;
+	border: 1px solid #4D186D;
+}
+
+.container-fluid{
+	padding-left: 0;
+}
+
+.list-group-item, .list-group-item:first-child, .list-group-item:last-child{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
