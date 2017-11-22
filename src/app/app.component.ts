@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { Http , HttpModule} from '@angular/http';
 import { DataService } from './data.service';
-import { Router} from '@angular/router';
+import { Router, RouterLinkActive} from '@angular/router';
 
 
 @Component({
