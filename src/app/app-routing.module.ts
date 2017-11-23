@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'play', component: PlayComponent },
   { path: 'modules', component: ModulesComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: 'modules', pathMatch: 'full' }
+  { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({

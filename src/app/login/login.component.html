@@ -1,1 +1,38 @@
+<div class="background-image"></div>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h6 class="modal-title"><i class="fa fa-sign-in"></i> Login to Healthcare Learning</h6>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+  <img src="../assets/symbol.png" width="150" height="125" class="mx-auto d-block" />
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input"> Remember me
+        </label>
+      </div>
+     <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="c('Close click')" routerLink="/modules">Sign In <i class="fa fa-sign-in"></i></button>
+    <!-- <button type="button" class="btn btn-primary" (click)="c('Close click')">Sign up <i class="fa fa-arrow-right"></i></button> -->
+  </div>
+</ng-template>
+<!--<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
 
+<hr>
+
+<pre>{{closeResult}}</pre>-->
