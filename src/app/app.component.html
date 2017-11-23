@@ -7,7 +7,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link" routerLink="/modules" routerLinkActive="activeLink">Modules</a>
             </li>
@@ -19,9 +19,8 @@
       </nav>
     </div>
   </div>
-
-        <router-outlet>
-        </router-outlet>
+  <router-outlet>
+  </router-outlet>
   <!--<app-info [title]="data?.intro?.title" [description]="data?.intro?.info"></app-info>
   <app-learn [heading]="data?.information?.title" [slides]="data?.information?.slides"></app-learn>
   <app-graphic [heading]="data?.identify?.title" [info]="data?.identify?.instructions" [background]="data?.identify?.background" [components]="data?.identify?.components"></app-graphic>-->

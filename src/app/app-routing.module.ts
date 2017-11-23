@@ -7,6 +7,7 @@ import { LearnComponent } from './learn/learn.component';
 import { InfoComponent } from './info/info.component';
 import { PlayComponent } from './play/play.component';
 import { ModulesComponent } from './modules/modules.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: 'intro', component: InfoComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'try', component: GraphicComponent },
   { path: 'play', component: PlayComponent },
   { path: 'modules', component: ModulesComponent },
-  { path: '**', redirectTo: 'intro', pathMatch: 'full' }
+  { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({

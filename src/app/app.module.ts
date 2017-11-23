@@ -16,6 +16,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { PlayComponent } from './play/play.component';
 import { ModulesComponent } from './modules/modules.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     GraphicComponent,
     PlayComponent,
     ModulesComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,42 @@
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+         <a class="nav-link" href="#" role="button">Sort </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-primary active" href="#" role="button">Featured Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shortest Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Latest Courses</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body back">
+    <img src="assets/symbol.png" width="150" height="150"/>
+    <h1 class="card-title">Welcome to Healthcare Learning</h1>
+    <p class="card-text">Select a course and start learning new skills.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<br/>
+<div class="container-fluid">
+  <div class="row">
+    <div class="card-deck">
+      <div class="card" *ngFor="let m of data?.modules">
+        <img class="card-img-top" src="{{m?.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">{{m?.title}}</h4>
+          <p class="card-text">{{m?.description}}</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-primary btn-lg float-left" href="#/{{m.url}}" role="button">View Course <i class="fa fa-arrow-right"></i></a>&nbsp;
+          <span class="text-muted float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> {{m?.timeSpent}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

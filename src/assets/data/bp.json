@@ -1,7 +1,9 @@
 {
 	"intro":{
-		"title": "Taking Blood Pressure Interactive",
-		"info": "description here..."
+		"title": "Module 1: Taking Blood Pressure",
+		"info": "In this module, you will learn how to take your Blood Pressure. In this easy to learn, module you will receive the follow skills: ",
+		"source": "istock.com",
+		"image": "https://www.goredforwomen.org/wp-content/uploads/2012/12/Risk-Factors-For-Heart-Disease-High-Blood-Pressure-700x395-700x395.jpg"
 	}, 
 	"information":{
 		"title": "Learning about Blood Pressure",
@@ -88,27 +90,31 @@
 	"modules":[
 		{
 			"title": "Taking Blood Pressure",
-			"image": "",
+			"image": "https://www.goredforwomen.org/wp-content/uploads/2012/12/Risk-Factors-For-Heart-Disease-High-Blood-Pressure-700x395-700x395.jpg",
 			"description":"This course teaches basic skills of learning how to take blood pressure.",
-			"url": "/"
+			"url": "intro",
+			"timeSpent": "15min"
 		},
 		{
 			"title": "Taking CPR",
-			"image": "",
+			"image": "http://santansun.com/wp-content/uploads/2017/01/CPR-450x250.jpg",
 			"description":"This course teaches basic skills of CPR.",
-			"url": "#"
+			"url": "#",
+			"timeSpent": "20min"
 		},
 		{
 			"title": "How to treat bleeding",
-			"image": "",
+			"image": "http://24526-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2017/01/web1_bleed2_faa.jpg",
 			"description":"This course teaches you how to treat bleeding.",
-			"url": "#"
+			"url": "#",
+			"timeSpent": "30min"
 		},
 		{
-			"title": "How to treat bleeding",
-			"image": "",
+			"title": "How to treat a burn",
+			"image": "https://myzne.com/wp-content/uploads/2011/11/treat-burns.jpg",
 			"description":"This course teaches you how to treat bleeding.",
-			"url": "#"
+			"url": "#",
+			"timeSpent": "30min"
 		}
 	]
 }
