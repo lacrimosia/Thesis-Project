@@ -5,6 +5,12 @@ button, .btn-primary{
 	border: 1px solid #4D186D;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	background: #431E75;
+	border: 1px solid #431E75;
+}
+
+
 .container-fluid{
 	padding-left: 0;
 }

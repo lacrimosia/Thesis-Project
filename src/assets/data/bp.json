@@ -10,25 +10,30 @@
 		"slides":[
 			{
 				"title": "What is Blood Pressure?",
-				"image": "http://www.saga.co.uk/contentlibrary/saga/publishing/verticals/health-and-wellbeing/procedures/blood-pressure-test-1280x960.jpg",
-				"description": "one"
+				"image": "../thesis/assets/what-is-bp.png",
+				"description": "When your heart beats, it pumps blood round your body to give it the energy and oxygen it needs. As the blood moves, it pushes against the sides of the blood vessels. The strength of this pushing is your blood pressure. If your blood pressure is too high, it puts extra strain on your arteries (and your heart) and this may lead to heart attacks and strokes.",
+				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure"
 			},
 			{
 				"title": "Understanding Blood Pressure",
-				"image": "https://res-3.cloudinary.com/sharecare/image/upload/c_fill,f_auto,h_340,w_600/v1484619127/articles/blood-pressure-readings",
-				"description": "two"
+				"image": "../thesis/assets/undestanding.png",
+				"description": "Every blood pressure reading consists of two numbers or levels. They are shown as one number on top of the other. The first (or top) number is your systolic blood pressure. It is the highest level your blood pressure reaches when your heart beats.The second (or bottom) number is your diastolic blood pressure. It is the lowest level your blood pressure reaches as your heart relaxes between beats.",
+				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure"
+
 			},
 			{
-				"title": "Tips for getting good blood Pressure",
-				"image": "http://www.woundcareclinic.net/wp-content/uploads/blood-pressure.jpg",
-				"description": "three"
+				"title": "Blood Pressure Tips",
+				"image": "../thesis/assets/tips.png",
+				"description": "three",
+				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure"
+
 			}
 		]
 	},
 	"identify":{
 		"title": "Parts of a blood Pressure Machine",
 		"instructions": "Click any of the dots to learn more about the components of a blood pressure machine.",
-		"background": "../bp-map.png", 
+		"background": "../thesis/bp-map.png", 
 		"components":[
 		 {
 			"position":{

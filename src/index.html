@@ -1,34 +1,51 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Healthcare Learning Application</title>
-  <base href="/">
+  <base href="/thesis/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="symbol.png">
 </head>
+
 <body>
   <app-root>
-  <style>
-    body{
-    	margin: 0;
-    	padding: 0;
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
     }
-	  #loader{
-		background: #4D186D;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-	   }
-		.loading{
-			max-width:15%;
-			position: fixed;
-  			top: 50%;
-  			left: 50%;
-  			transform: translate(-50%, -50%);
-		}
-	</style>
-  <div id="loader"><img src="assets/symbol-white.png" class="loading"/></div>
+
+    #loader {
+      /*  background: #4D186D; */
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#662d91+0,512c7a+57,431e75+100 */
+      background: #662d91;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #662d91 0%, #512c7a 57%, #431e75 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #662d91 0%, #512c7a 57%, #431e75 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #662d91 0%, #512c7a 57%, #431e75 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#662d91', endColorstr='#431e75', GradientType=0);
+      /* IE6-9 */
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .loading {
+      max-width: 15%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    </style>
+    <div id="loader"><img src="assets/symbol-white.png" class="loading" /></div>
   </app-root>
 </body>
+
 </html>

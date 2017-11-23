@@ -12,7 +12,37 @@ ngb-carousel{
 	border: 1px solid red;
 }
 
-img{
+/*img{
 	max-width: 300px;
 	height: auto;
+}*/
+
+.headingTable{
+	background: #431E75;
+	border: 1px solid #431E75;
+}
+
+#row1{
+	background: #9676b5;
+	border: 1px solid #9676b5;
+}
+
+#row2{
+	background: #85439a;
+	border: 1px solid #85439a;
+}
+
+#row3{
+	background: #662d91;
+	border: 1px solid #662d91;
+}
+
+#row4{
+	background: #512c7a;
+	border: 1px solid #512c7a;
+}
+
+#row5{
+	background: #431e75;
+	border: 1px solid #431e75;
 }
