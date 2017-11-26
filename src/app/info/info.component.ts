@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { DataService } from '../data.service';
+import { Router, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-info',
@@ -11,9 +12,12 @@ export class InfoComponent implements OnInit {
 
  //@Input() title;
  //@Input() description;
+ link;
 
   data = "";
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private _router: Router) {
+     this.link = _router;
+   }
 
   ngOnInit() {
   	this.grabData();

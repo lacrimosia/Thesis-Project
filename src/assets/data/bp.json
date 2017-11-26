@@ -2,8 +2,27 @@
 	"intro":{
 		"title": "Module 1: Taking Blood Pressure",
 		"info": "In this module, you will learn how to take your Blood Pressure. In this easy to learn, module you will receive the follow skills: ",
+		"subtext":"After this module, you will be able to take your own blood pressure and someone elses. Click the begin button to start your course. Goodluck and have fun!",
 		"source": "istock.com",
-		"image": "https://www.goredforwomen.org/wp-content/uploads/2012/12/Risk-Factors-For-Heart-Disease-High-Blood-Pressure-700x395-700x395.jpg"
+		"image": "https://www.goredforwomen.org/wp-content/uploads/2012/12/Risk-Factors-For-Heart-Disease-High-Blood-Pressure-700x395-700x395.jpg",
+		"skills":[
+			{
+				"icon":"fa fa-heart",
+				"name": "Measuring Blood Pressure"
+			},
+			{
+				"icon":"fa fa-stethoscope",
+				"name": "Blood Pressure Levels"
+			},
+			{
+				"icon":"fa fa-heart",
+				"name": "Blood Pressure Tips and information"
+			},
+			{
+				"icon":"fa fa-heart",
+				"name": "Blood Pressure and Pulse Simulation"
+			}
+		]
 	}, 
 	"information":{
 		"title": "Learning about Blood Pressure",

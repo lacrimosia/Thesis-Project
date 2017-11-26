@@ -50,3 +50,8 @@ a{
 a:hover{
 	color: #662D91;
 }
+
+.bg-primary{
+	background-color: #431E75 !important;
+	color: #9777B5;
+}
