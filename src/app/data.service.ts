@@ -13,7 +13,7 @@ export class DataService {
 
   constructor(private http: Http) { }
 
-  url = "../thesis/assets/data/bp.json";
+  url = "../assets/data/bp.json";
 
   getData(){
       return this.http.get(this.url)
