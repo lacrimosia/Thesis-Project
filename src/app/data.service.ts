@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Http , HttpModule} from '@angular/http';
 import { of } from 'rxjs/observable/of';
+import { Global } from './global';
 
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
@@ -11,9 +12,14 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class DataService {
 
-  constructor(private http: Http) { }
+	basehref;
 
-  url = "../assets/data/bp.json";
+  constructor(private http: Http, private link: Global) 
+  {
+  	this.basehref = link.path;
+   }
+
+  url = "/thesis/assets/data/bp.json";
 
   getData(){
       return this.http.get(this.url)

@@ -1,20 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Http , HttpModule} from '@angular/http';
 import { DataService } from '../data.service';
+import { Global } from '../global';
+
 
 @Component({
   selector: 'app-modules',
   templateUrl: './modules.component.html',
   styleUrls: ['./modules.component.css'],
-  providers: [DataService]
+  providers: [DataService, Global]
 })
 export class ModulesComponent implements OnInit {
 
   data = "";
   param = "title";
+  basehref;
 
  // Inject HttpClient into your component or service.
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private link: Global) {
+    this.basehref = link.path;
+  }
 
   ngOnInit(): void {
     this.getAllData();
@@ -26,11 +31,6 @@ export class ModulesComponent implements OnInit {
       // Read the result field from the JSON response.
       this.data = data;
     });
-  }
-
-  sortItems(item){
-    this.param = item;
-    return this.param;
   }
 
 }

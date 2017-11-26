@@ -21,6 +21,9 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 
+// Global sub directory path
+import { Global } from './global';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +45,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     Ng2OrderModule
   ],
-  providers: [HttpModule, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [HttpModule, {provide: LocationStrategy, useClass: HashLocationStrategy}, Global],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

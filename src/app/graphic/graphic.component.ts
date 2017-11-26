@@ -1,22 +1,24 @@
 import {NgbPopover} from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, Input, Output, ViewChild } from '@angular/core';
 import { DataService } from '../data.service';
+import { Global } from '../global';
 
 @Component({
   selector: 'app-graphic',
   templateUrl: './graphic.component.html',
   styleUrls: ['./graphic.component.css'],
-  providers: [DataService]
+  providers: [DataService, Global]
 })
 export class GraphicComponent implements OnInit {
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private link: Global) {this.basehref = link.path; }
 
   //@Input() heading;
   //@Input() info;
   //@Input() background;
   //@Input() components;
   data = "";
+  basehref;
 
 //  @ViewChild('button') public popover: NgbPopover;
 
