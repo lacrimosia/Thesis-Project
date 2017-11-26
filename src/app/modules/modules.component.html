@@ -6,13 +6,13 @@
          <a class="nav-link" href="#" role="button">Sort </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-primary active" href="#" role="button">Featured Courses</a>
+        <a class="nav-link btn btn-primary active" href="#" role="button">All Courses</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Shortest Courses</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Latest Courses</a>
+        <a class="nav-link" href="#">Life-Saving Courses</a>
       </li>
     </ul>
   </div>
@@ -20,7 +20,7 @@
     <img src="assets/symbol.png" width="150" height="150"/>
     <h1 class="card-title">Welcome to Healthcare Learning</h1>
     <p class="card-text">Select a course and start learning new skills.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary btn-lg" href="#/intro">View newest course</a>
   </div>
 </div>
 <br/>
@@ -32,7 +32,7 @@
       <div class="card" *ngFor="let m of data?.modules">
         <img class="card-img-top" src="{{m?.image}}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><strong>{{m?.title}}</strong> <i class="fa fa-heart float-right"></i></h5>
+          <h5 class="card-title"><strong>{{m?.title | uppercase}}</strong> <i class="fa fa-heart float-right"></i></h5>
           <p class="card-text">{{m?.description}}</p>
         </div>
         <div class="card-footer">
