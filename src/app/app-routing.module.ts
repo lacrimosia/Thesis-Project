@@ -8,6 +8,8 @@ import { InfoComponent } from './info/info.component';
 import { PlayComponent } from './play/play.component';
 import { ModulesComponent } from './modules/modules.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+
 
 const routes: Routes = [
   { path: 'intro', component: InfoComponent },
@@ -16,6 +18,7 @@ const routes: Routes = [
   { path: 'play', component: PlayComponent },
   { path: 'modules', component: ModulesComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 

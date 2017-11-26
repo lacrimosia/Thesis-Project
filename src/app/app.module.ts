@@ -17,6 +17,8 @@ import { PlayComponent } from './play/play.component';
 import { ModulesComponent } from './modules/modules.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { LoginComponent } from './login/login.component';
     PlayComponent,
     ModulesComponent,
     SideMenuComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

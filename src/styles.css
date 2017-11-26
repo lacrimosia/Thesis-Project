@@ -42,3 +42,11 @@
 .light-purple-text{
 	color: #9777B5;
 }
+
+a{
+	color: #212529;
+}
+
+a:hover{
+	color: #662D91;
+}
