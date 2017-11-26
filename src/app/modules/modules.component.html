@@ -3,16 +3,16 @@
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
       <li class="nav-item">
-         <a class="nav-link" href="#" role="button">Sort </a>
+         <a class="nav-link" role="button">Sort </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-primary active" href="#" role="button">All Courses</a>
+        <button class="nav-link btn btn-primary" (click)="param='title'" role="button"><i class="fa fa-th-list"></i> All Courses</button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Shortest Courses</a>
+        <button class="nav-link btn btn-primary" (click)="param='timeSpent'"><i class="fa fa-retweet"></i> Shortest Courses</button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Life-Saving Courses</a>
+        <button class="nav-link btn btn-primary" (click)="param='life'"><i class="fa fa-life-ring"></i> Life-Saving Courses</button>
       </li>
     </ul>
   </div>
@@ -29,7 +29,7 @@
   <div class="card-columns">
     <!--class="col-lg-4 col-md-6 col-sm-6 col-xs-12"--> 
    <!-- <div > -->
-      <div class="card" *ngFor="let m of data?.modules">
+      <div class="card animated fadeIn" *ngFor="let m of data?.modules | orderBy: param">
         <img class="card-img-top" src="{{m?.image}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><strong>{{m?.title | uppercase}}</strong> <i class="fa fa-heart float-right"></i></h5>
@@ -37,7 +37,7 @@
         </div>
         <div class="card-footer">
           <a class="btn btn-primary btn-md float-left" href="#/{{m.url}}" role="button">View Course <i class="fa fa-arrow-right"></i></a>&nbsp;
-          <span class="text-muted float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> ~{{m?.timeSpent}}</span>
+          <span class="text-muted float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> ~{{m?.timeSpent}}min</span>
           <p></p>
         </div>
       </div>

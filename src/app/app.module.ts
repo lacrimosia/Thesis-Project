@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { Ng2OrderModule } from 'ng2-order-pipe';
 
 // Import HttpClientModule from @angular/common/http
 import { Http ,HttpModule} from '@angular/http';
@@ -38,7 +39,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     HttpModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2OrderModule
   ],
   providers: [HttpModule, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

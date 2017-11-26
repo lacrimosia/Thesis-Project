@@ -11,6 +11,7 @@ import { DataService } from '../data.service';
 export class ModulesComponent implements OnInit {
 
   data = "";
+  param = "title";
 
  // Inject HttpClient into your component or service.
   constructor(private dataService: DataService) {}
@@ -25,6 +26,11 @@ export class ModulesComponent implements OnInit {
       // Read the result field from the JSON response.
       this.data = data;
     });
+  }
+
+  sortItems(item){
+    this.param = item;
+    return this.param;
   }
 
 }

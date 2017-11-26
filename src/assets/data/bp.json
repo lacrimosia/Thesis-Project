@@ -117,63 +117,72 @@
 			"image": "https://www.goredforwomen.org/wp-content/uploads/2012/12/Risk-Factors-For-Heart-Disease-High-Blood-Pressure-700x395-700x395.jpg",
 			"description":"This course teaches basic skills of learning how to take blood pressure.",
 			"url": "intro",
-			"timeSpent": "15min"
+			"timeSpent": "10",
+			"life": 1
 		},
 		{
 			"title": "Taking CPR",
 			"image": "http://santansun.com/wp-content/uploads/2017/01/CPR-450x250.jpg",
 			"description":"This course teaches basic skills of CPR.",
 			"url": "#",
-			"timeSpent": "20min"
+			"timeSpent": "20",
+			"life": 1.5
 		},
 		{
 			"title": "Controlling Bleeding",
 			"image": "http://24526-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2017/01/web1_bleed2_faa.jpg",
 			"description":"This course teaches you how to treat bleeding.",
 			"url": "#",
-			"timeSpent": "30min"
+			"timeSpent": "35",
+			"life": 1.2
 		},
 		{
 			"title": "How to treat a burn",
 			"image": "https://myzne.com/wp-content/uploads/2011/11/treat-burns.jpg",
 			"description":"This course teaches you how to treat bleeding.",
 			"url": "#",
-			"timeSpent": "30min"
+			"timeSpent": "30",
+			"life": 1.2
 		},
 		{
 			"title": "The Heimlich Maneuver",
 			"image": "http://www.emergencycareforyou.org/uploadedImages/choking-heimlich-800.jpg",
 			"description":"This course teaches you The Heimlich Maneuver and how to perform this in an emergency.",
 			"url": "#",
-			"timeSpent": "15min"
+			"timeSpent": "15",
+			"life": 1.6
 		},
 		{
 			"title": "Preventing Hypothermia",
 			"image": "http://www.fastingtalk.com/wp-content/uploads/2017/03/Cold-Woman.png",
 			"description":"This course teaches you the skills you need if you or a friend were to go into Hypothermia.",
 			"url": "#",
-			"timeSpent": "25min"
+			"timeSpent": "25",
+			"life": 2
 		},
 		{
 			"title": "How to Save Someone Who's Drowning",
 			"image": "http://www.zifflaw.com/NYInjuryLawBlog/wp-content/uploads/2013/06/drowning_rescue_cropped.jpg",
 			"description":"This course teaches you how to save someone from drowing.",
 			"url": "#",
-			"timeSpent": "30min"
+			"timeSpent": "30",
+			"life": 1.9
 		},
 		{
 			"title": "Basic First Aid",
 			"image": "http://healthnetpulse.com/business/files/2013/07/workplace-First-Aid.jpeg",
 			"description":"This course teaches you the basics of First aid.",
 			"url": "#",
-			"timeSpent": "10min"
+			"timeSpent": "10",
+			"life": 1.4
 		},
 		{
 			"title": "How to Deliver Baby in a Car (or Anywhere Else)",
 			"image": "https://i.kinja-img.com/gawker-media/image/upload/s--oYgg53X4--/c_fit,fl_progressive,q_80,w_636/19759rs7bxd6bjpg.jpg",
 			"description":"This course teaches you the basics delivering a child in various circumstances.",
 			"url": "#",
-			"timeSpent": "45min"
+			"timeSpent": "45",
+			"life": 2.5
 		}
 	]
 }
