@@ -23,20 +23,23 @@
   </div>
 </div>
 <br/>
-<div class="container-fluid animated fadeIn">
+<div class="container animated fadeIn">
   <div class="row">
-    <div class="card-deck">
+  <div class="card-columns">
+    <!--class="col-lg-4 col-md-6 col-sm-6 col-xs-12"--> 
+   <!-- <div > -->
       <div class="card" *ngFor="let m of data?.modules">
         <img class="card-img-top" src="{{m?.image}}" alt="Card image cap">
         <div class="card-body">
-          <h4 class="card-title">{{m?.title}}</h4>
+          <h5 class="card-title"><strong>{{m?.title}}</strong> <i class="fa fa-heart float-right"></i></h5>
           <p class="card-text">{{m?.description}}</p>
         </div>
         <div class="card-footer">
-          <a class="btn btn-primary btn-lg float-left" href="#/{{m.url}}" role="button">View Course <i class="fa fa-arrow-right"></i></a>&nbsp;
-          <span class="text-muted float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> {{m?.timeSpent}}</span>
+          <a class="btn btn-primary btn-md float-left" href="#/{{m.url}}" role="button">View Course <i class="fa fa-arrow-right"></i></a>&nbsp;
+          <span class="text-muted float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> ~{{m?.timeSpent}}</span>
         </div>
       </div>
-    </div>
+   <!-- </div> -->
+  </div>
   </div>
 </div>

@@ -1,8 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
-button, .btn-primary{
+/* remove blue border and shadow */
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+/* hide arrow by dropdown*/
+.dropdown-toggle::after {
+    display:none
+}
+.btn-primary, .btn:active, .btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
 	background: #4D186D;
 	border: 1px solid #4D186D;
+	transition: hover .2s linear;
+	outline: none;
+	box-shadow: none;
+}
+
+.btn-primary:hover, button:focus{
+	background: #662D91;
+	border: 1px solid #662D91;
+	cursor: pointer;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
@@ -18,4 +37,8 @@ button, .btn-primary{
 .list-group-item, .list-group-item:first-child, .list-group-item:last-child{
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+}
+
+.light-purple-text{
+	color: #9777B5;
 }
