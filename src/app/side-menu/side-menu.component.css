@@ -32,11 +32,26 @@
 	background: #431E75;
 }
 
+.wrapper2{
+	width: 100%;
+	height: auto;
+	background: #431E75;
+}
+
 @media screen and (max-width: 574px){
 	.wrapper{
 		display: none;
 	}
+
+	.wrapper2{
+		display: block;
+	}
+  .btn-group{
+  	display: block;
+  }
+
 }
+
 
 .btn-group-vertical{
 	width: 100%;
