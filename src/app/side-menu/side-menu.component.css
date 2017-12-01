@@ -16,7 +16,28 @@
 	border: 1px solid #431e75;
 }
 
+.btn-primary{
+	background: #431E75;
+	border: 1px solid #431E75;
+}
+
 .list-group a{
 	text-align: center;
 	font-size: 150%;
+}
+
+.wrapper{
+	height: 100vh;
+	width: auto;
+	background: #431E75;
+}
+
+@media screen and (max-width: 574px){
+	.wrapper{
+		display: none;
+	}
+}
+
+.btn-group-vertical{
+	width: 100%;
 }

@@ -9,12 +9,20 @@ import { Router, RouterLinkActive} from '@angular/router';
 export class SideMenuComponent implements OnInit {
 
   link;
+  windowWidth:any;
+  windowHeight:any;
 
   constructor(private _router: Router) { 
   	this.link = _router;
+  	this.windowWidth = (window.screen.height) + "px";
+    this.windowHeight = (window.screen.width) + "px";
   }
 
   ngOnInit() {
+  }
+
+  getWindowWidth(){
+  	return this.windowWidth;
   }
 
 }
