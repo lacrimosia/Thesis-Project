@@ -9,33 +9,23 @@
       <img src="{{data?.intro?.image}}" />
       <p>{{data?.intro?.info}}</p>
       <button class="btn-lg btn-primary">Begin</button>-->
-      <div class="card text-left">
-        <div class="card-header bg-primary">
-          <h6>{{data?.intro?.title}}</h6>
-        </div>
-        <div class="card-body">
-          <div class="imageBG"></div>
-          <h6 class="card-title">{{data?.intro?.info}}</h6>
-          <div class="container">
-            <div class="row">
-          <div class="col-sm-6 col-lg-3 col-md-3 col-xs-6" *ngFor="let s of data?.intro?.skills">
-            <div class="card bg-primary">
-              <div class="card-body text-center">
-                <i class="{{s?.icon}} fa-2x"></i>
-                <h4 class="card-title">{{s?.name}}</h4>
-                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-              </div>
-            </div>
-            <p></p>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">{{data?.intro?.title}}</h1>
+          <p class="lead">{{data?.intro?.info}}</p>
+          <div class="text-muted">
+            <a routerLink="/learn" class="btn btn-primary btn-lg">Begin <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
-      <h6 class="card-title">{{data?.intro?.subtext}}</h6>
-    </div>
-        <div class="card-footer text-muted">
-          <a routerLink="/learn" class="btn btn-primary">Begin <i class="fa fa-arrow-right"></i></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div *ngFor="let s of data?.intro?.skills" class="col-lg-6 col-md-6">
+            <h2 class="text-left m-4"><i class="{{s?.icon}} fa-2x"></i> {{s?.name}}</h2>
+            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+            <h6 class="mb-5">{{data?.intro?.subtext}}</h6>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>

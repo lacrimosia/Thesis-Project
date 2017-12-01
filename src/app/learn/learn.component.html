@@ -18,11 +18,11 @@
       <ngb-tabset #t="ngbTabset" type="pills" [justify]="currentJustify">
         <ngb-tab *ngFor="let slide of data?.information?.slides; let i = index" id="tab-selectbyid{{i}}" title="{{i+1}}. {{slide?.title}}">
           <ng-template ngbTabContent>
-            <div class="card mb-3">
-              <img class="card-img-top" src="{{slide?.image}}" alt="image">
-              <div class="card-body">
-                <h4 class="card-title">{{slide?.title}}</h4>
-                <p class="card-text">{{slide?.description}}</p>
+              <div class="jumbotron jumbotron-fluid" ngSyle="{'background': 'url('+ slide?.image +')'}">
+                <div class="container">
+                  <h1 class="display-3">{{slide?.title}}</h1>
+                  <p class="lead">{{slide?.description}}</p>
+                </div>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item" *ngIf="i==1">
@@ -75,7 +75,6 @@
                   <button class="btn btn-primary" (click)="t.select('tab-selectbyid'+(i+1).toString())" *ngIf="i<data?.information?.slides?.length-1">Next <i class="fa fa-arrow-right"></i></button>
                 </p>
               </div>
-            </div>
           </ng-template>
         </ngb-tab>
       </ngb-tabset>
