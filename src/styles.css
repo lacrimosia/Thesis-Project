@@ -10,7 +10,7 @@
 .dropdown-toggle::after {
     display:none
 }
-.btn-primary, .btn:active, .btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
+.btn-primary, .btn:active, .btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:active:focus{
 	background: #654994;
 	border: 1px solid #654994;
 	transition: hover .1s linear;
@@ -75,5 +75,4 @@ a:hover{
 .display-3{
 	font-size: 3.5rem;
 }
-
 

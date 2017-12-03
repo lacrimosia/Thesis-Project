@@ -9,6 +9,7 @@ import { Router, RouterLinkActive} from '@angular/router';
 export class MenuComponent implements OnInit {
 
 	link;
+	public isCollapsed = true;
 
   constructor(private _router: Router) {
     this.link = _router;

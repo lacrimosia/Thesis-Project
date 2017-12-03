@@ -9,3 +9,42 @@
 .btn-default{
 	background: #662d91;
 }
+
+nav{
+	z-index: 5;
+}
+
+.btn-outline-primary, .btn-outline-primary:active:focus{
+	color: #662d91;
+	border: 1px solid #662d91;
+	background: #662d91;
+	box-shadow: none;
+}
+
+.btn-outline-primary i{
+	color: #9777B5;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary i:hover{
+	background: #662d91;
+	border: 1px solid #662d91;
+	color: #9777B5;
+	cursor:pointer;
+}
+
+.collapse{
+	visibility: hidden;
+}
+.collapse.show{
+	visibility: visible;
+	transition: visibility 3s linear;
+}
+
+.list-group-item{
+	background: transparent;
+}
+
+
+.list-group-item:hover{
+	background: #D3CFE4;
+}
