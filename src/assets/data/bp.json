@@ -7,20 +7,24 @@
 		"image": "https://www.goredforwomen.org/wp-content/uploads/2012/12/Risk-Factors-For-Heart-Disease-High-Blood-Pressure-700x395-700x395.jpg",
 		"skills":[
 			{
-				"icon":"fa fa-heart",
-				"name": "Measuring Blood Pressure"
+				"icon":"fa fa-heartbeat",
+				"name": "Measuring Blood Pressure",
+				"description": "By the end of this course, you will have the basic knowledge of measuring blood pressure. You will be able to identify the blood pressure process."
 			},
 			{
 				"icon":"fa fa-stethoscope",
-				"name": "Blood Pressure Levels"
+				"name": "Blood Pressure Levels",
+				"description": "You will understand the levels of Blood Pressure and what they mean."
 			},
 			{
-				"icon":"fa fa-heart",
-				"name": "Blood Pressure Tips and information"
+				"icon":"fa fa-file-text-o",
+				"name": "Tips and Information",
+				"description": "This course will give you tips on how to control your blood pressure and prevent hypertension and stress."
 			},
 			{
-				"icon":"fa fa-heart",
-				"name": "Blood Pressure and Pulse Simulation"
+				"icon":"fa fa-tablet",
+				"name": "Virtual Simulation",
+				"description": "The most important part of the course is you will get to practice taking blood pressure in a virtual simulation."
 			}
 		]
 	}, 

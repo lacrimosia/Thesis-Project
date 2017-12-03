@@ -27,7 +27,7 @@
 }
 
 .wrapper{
-	height: 100vh;
+	min-height: 100%;
 	width: auto;
 	background: #431E75;
 }
