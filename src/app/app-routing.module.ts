@@ -9,6 +9,7 @@ import { PlayComponent } from './play/play.component';
 import { ModulesComponent } from './modules/modules.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { AnalyzeComponent } from './analyze/analyze.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'modules', component: ModulesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'analyze', component: AnalyzeComponent },
   { path: '**', redirectTo: 'modules', pathMatch: 'full' }
 ];
 

@@ -23,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 
 // Global sub directory path
 import { Global } from './global';
+import { AnalyzeComponent } from './analyze/analyze.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { Global } from './global';
     SideMenuComponent,
     LoginComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    AnalyzeComponent
   ],
   imports: [
     BrowserModule,

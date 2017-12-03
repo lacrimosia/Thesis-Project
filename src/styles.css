@@ -11,22 +11,22 @@
     display:none
 }
 .btn-primary, .btn:active, .btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
-	background: #4D186D;
-	border: 1px solid #4D186D;
-	transition: hover .2s linear;
+	background: #654994;
+	border: 1px solid #654994;
+	transition: hover .1s linear;
 	outline: none;
 	box-shadow: none;
 }
 
 .btn-primary:hover, button:focus{
-	background: #662D91;
-	border: 1px solid #662D91;
+	background: #816ba8;
+	border: 1px solid #816ba8;
 	cursor: pointer;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
-	background: #431E75;
-	border: 1px solid #431E75;
+	background: #654994;
+	border: 1px solid #654994;
 }
 
 
@@ -63,6 +63,15 @@ a:hover{
 
 .col-lg-10, .col-md-10, .col-md-2, .col-md-2{
 	padding: 0px;
+}
+
+.jumbotron{
+  background: #c9c1dc;
+}
+
+/* jumbotron heading */
+.display-3{
+	font-size: 3.5rem;
 }
 
 
