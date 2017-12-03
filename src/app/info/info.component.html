@@ -20,9 +20,9 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div *ngFor="let s of data?.intro?.skills" class="col-lg-6 col-md-6">
+          <div *ngFor="let s of data?.intro?.skills; let d = index;" class="col-lg-6 col-md-6">
             <h1 class="text-center"><i class="{{s?.icon}} fa-3x icons"></i></h1>
-            <h2 class="text-center m-4"> {{s?.name}}</h2>
+            <h2 class="text-center m-4"><span class="badge badge-pill badge-primary">{{d+1}}</span>  {{s?.name}}</h2>
             <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
             <h6 class="m-4 mb-5">{{s?.description}}</h6>
           </div>

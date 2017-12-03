@@ -35,7 +35,24 @@
 				"title": "What is Blood Pressure?",
 				"image": "../assets/what-is-bp.png",
 				"description": "When your heart beats, it pumps blood round your body to give it the energy and oxygen it needs. As the blood moves, it pushes against the sides of the blood vessels. The strength of this pushing is your blood pressure. If your blood pressure is too high, it puts extra strain on your arteries (and your heart) and this may lead to heart attacks and strokes.",
-				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure"
+				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure",
+				"information":[
+					{
+						"title": "How you can tell if you have high blood pressure?",
+						"image": "https://res-3.cloudinary.com/sharecare/image/upload/c_fill,f_auto,h_340,w_600/v1484619127/articles/blood-pressure-readings",
+						"description": "Having high blood pressure (hypertension) is not usually something that you feel or notice. It does not tend to produce obvious signs or symptoms. The only way to know what your blood pressure is, is to have it measured."
+					},
+					{
+						"title": "What’s a normal reading?",
+						"image": "http://www.canadianpharmacymeds.com/blog/wp-content/uploads/2014/06/blood-pressure-reading.jpg",
+						"description": "Blood pressure readings are expressed in millimeters of mercury. This unit is abbreviated as mm Hg. A normal reading would be any blood pressure below 120/80 mm Hg and above 90/60 mm Hg."
+					},
+					{
+						"title": "Prehypertension",
+						"image": "https://www.healthline.com/hlcmsresource/images/imce/high-blood-pressure-hypertension-effect-on-body_thumb.jpg",
+						"description": "When your systolic (upper number) pressure is between 120 and 139 mm Hg or your diastolic (lower number) pressure is between 80 and 89 mm Hg, it means you have prehypertension."
+					}
+				]
 			},
 			{
 				"title": "Understanding Blood Pressure",
