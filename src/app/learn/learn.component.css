@@ -17,6 +17,10 @@ ngb-carousel{
 	height: auto;
 }*/
 
+.badge-primary{
+	background: #654994;
+}
+
 .headingTable{
 	background: #431E75;
 	border: 1px solid #431E75;
@@ -45,4 +49,8 @@ ngb-carousel{
 #row5{
 	background: #431e75;
 	border: 1px solid #431e75;
+}
+
+.bg-info{
+	background-color: #D3CFE4 !important;
 }

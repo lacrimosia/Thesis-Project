@@ -58,7 +58,52 @@
 				"title": "Understanding Blood Pressure",
 				"image": "../assets/undestanding.png",
 				"description": "Every blood pressure reading consists of two numbers or levels. They are shown as one number on top of the other. The first (or top) number is your systolic blood pressure. It is the highest level your blood pressure reaches when your heart beats.The second (or bottom) number is your diastolic blood pressure. It is the lowest level your blood pressure reaches as your heart relaxes between beats.",
-				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure"
+				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure",
+				"information": {
+						"title": "Blood Pressure Categories",
+						"description": "The five blood pressure ranges as recognized by the American Heart Association are:",
+						"levels": [
+							{
+								"title": "Normal blood pressure",
+								"image": "hyp-1.png",
+								"description": "Having blood pressure numbers that are within the normal (optimal) range of less than 120/80 mm Hg. Keep up the good work and stick with heart-healthy habits like following a balanced diet and getting regular exercise."
+							},
+							{
+								"title": "Elevated",
+								"image": "hyp-2.png",
+								"description": "Elevated blood pressure is when readings are consistently ranging from 120-129 systolic and less than 80 mm Hg diastolic. People with elevated blood pressure are likely to develop high blood pressure unless steps are taken to control it."
+							},
+							{
+								"title": "Hypertension Stage 1",
+								"image": "hyp-3.png",
+								"description": "Hypertension Stage 1 is when blood pressure is consistently ranging from 130-139 systolic or 80-89 mm Hg diastolic. At this stage of high blood pressure, doctors are likely to prescribe lifestyle changes and may consider adding blood pressure medication."
+							},
+							{
+								"title": "Hypertension Stage 2",
+								"image": "hyp-4.png",
+								"description": "Hypertension Stage 2 is when blood pressure is consistently ranging at levels of 140/90 mm Hg or higher. At this stage of high blood pressure, doctors are likely to prescribe a combination of blood pressure medications along with lifestyle changes."
+							},
+							{
+								"title": "Hypertensive crisis",
+								"image": "hyp-5.png",
+								"description": "This is when high blood pressure requires medical attention.If your blood pressure readings suddenly exceed 180/120 mm Hg, wait five minutes and test again. If your readings are still unusually high, contact your doctor immediately. You could be experiencing a hypertensive crisis. If your blood pressure is higher than 180/120 mm Hg and you are experiencing signs of possible organ damage such as chest pain, shortness of breath, back pain, numbness/weakness, change in vision, difficulty speaking, do not wait to see if your pressure comes down on its own. Call 9-1-1."
+							}
+						],
+						"more":{
+							"title":"Your blood pressure numbers and what they mean",
+							"sub": "Your blood pressure is recorded as two numbers:",
+							"type":[
+								{
+									"title": "Systolic blood pressure (the upper number)",
+									"description": "Indicates how much pressure your blood is exerting against your artery walls when the heart beats."
+								},
+								{
+									"title": "Diastolic blood pressure (the lower number)",
+									"description": "indicates how much pressure your blood is exerting against your artery walls while the heart is resting between beats."
+								}
+							]
+						}
+				}
 
 			},
 			{

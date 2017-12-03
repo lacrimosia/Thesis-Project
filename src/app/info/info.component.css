@@ -1,10 +1,8 @@
 .imageBG{
 	background:url('https://www.goredforwomen.org/wp-content/uploads/2012/12/Risk-Factors-For-Heart-Disease-High-Blood-Pressure-700x395-700x395.jpg');
 	background-size: cover;
+	opacity: 0.5;
 	background-repeat: no-repeat;
-	width: 100%;
-	min-height: 225px;
-	max-height: 350px;
 }
 
 .icons{
