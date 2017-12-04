@@ -19,7 +19,7 @@ export class DataService {
   	this.basehref = link.path;
    }
 
-  url = "/assets/data/bp.json";
+  url = "/thesis/assets/data/bp.json";
 
   getData(){
       return this.http.get(this.url)
