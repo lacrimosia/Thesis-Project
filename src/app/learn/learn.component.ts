@@ -1,5 +1,8 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { DataService } from '../data.service';
+import { Router, RouterLinkActive} from '@angular/router';
+import { DomSanitizer } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-learn',
@@ -11,8 +14,14 @@ export class LearnComponent implements OnInit {
   // @Input() heading;
   // @Input() slides;
   data = "";
+  link;
+  sanitize;
+  id;
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private _router: Router, private _dom: DomSanitizer) { 
+    this.link = _router;
+    this.sanitize = _dom;
+  }
 
   ngOnInit() {
   	this.grabInfo();
@@ -25,5 +34,4 @@ export class LearnComponent implements OnInit {
       this.data = data;
     });
   }
-
 }

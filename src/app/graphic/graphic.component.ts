@@ -2,6 +2,7 @@ import {NgbPopover} from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, Input, Output, ViewChild } from '@angular/core';
 import { DataService } from '../data.service';
 import { Global } from '../global';
+import { Router, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-graphic',
@@ -10,8 +11,12 @@ import { Global } from '../global';
   providers: [DataService, Global]
 })
 export class GraphicComponent implements OnInit {
-
-  constructor(private dataService: DataService, private link: Global) {this.basehref = link.path; }
+  links;
+  currentIndex = 0;
+  constructor(private dataService: DataService, private link: Global, private _router: Router) {
+    this.basehref = link.path; 
+    this.links = _router;
+  }
 
   //@Input() heading;
   //@Input() info;
@@ -33,5 +38,4 @@ export class GraphicComponent implements OnInit {
       this.data = data;
     });
   }
-
 }

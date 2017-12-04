@@ -13,8 +13,10 @@
                 <h1 class="display-3">{{slide?.title}}</h1>
                 <p class="lead">{{slide?.description}}</p>
                 <p>
+                  <a class="btn btn-primary btn-lg" *ngIf="i===0" role="button" routerLink="/intro"><i class="fa fa-arrow-left"></i> Back to Start</a>
                   <button class="btn btn-primary btn-lg" (click)="t.select('tab-selectbyid'+(i-1).toString())" *ngIf="i>0"><i class="fa fa-arrow-left"></i> Previous</button>
                   <button class="btn btn-primary btn-lg" (click)="t.select('tab-selectbyid'+(i+1).toString())" *ngIf="i<data?.information?.slides?.length-1">Next <i class="fa fa-arrow-right"></i></button>
+                  <a class="btn btn-primary btn-lg" *ngIf="i===data?.information?.slides?.length-1" role="button" routerLink="/try">Next Lesson <i class="fa fa-arrow-right"></i></a>
                 </p>
               </div>
             </div>
@@ -86,6 +88,26 @@
                             <h4 class="card-title">{{j?.title}}</h4>
                             <p class="card-text">{{j?.description}}</p>
                             <a href="{{slide?.source}}" class="btn btn-primary" target="_blank">Learn more <i class="fa fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item" *ngIf="i==2">
+                  <h3 class="card-title">{{slide?.heading}}</h3>
+                  <p>{{slide?.sub}}</p>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="card-columns">
+                        <div class="card" *ngFor="let g of slide?.videos">
+                          <div class="card-body">
+                            <!--<div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" [src]="('https://www.youtube.com/watch?v=' + g?.url) | safe" allowfullscreen></iframe>
+                            </div>-->
+                             <img class="card-img-top" src="../assets/movie.png" alt="Youtube file">
+                            <h4 class="card-title">{{g?.title}}</h4>
+                            <a href="https://www.youtube.com/watch?v={{g?.url}}" class="btn btn-primary" target="_blank"><i class="fa fa-link"></i> Watch Video</a>
                           </div>
                         </div>
                       </div>

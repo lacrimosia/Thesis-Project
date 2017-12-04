@@ -109,15 +109,35 @@
 			{
 				"title": "Blood Pressure Tips",
 				"image": "../assets/tips.png",
-				"description": "three",
-				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure"
+				"description": "Even if you do not have high blood pressure at the moment, it is important to keep your blood pressure as low as you can. The higher your blood pressure, the higher your risk of health problems. For example, a blood pressure of 135 over 85 may be “normal” but someone with this reading is twice as likely to have a heart attack or stroke as someone with a reading of 115 over 75.",
+				"source": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressure",
+				"heading":"Preventative Measures",
+				"sub": "There are many things that you can do to keep your blood pressure in the lower range. Checkout these videos below on tips that can help you maintain your blood pressure.",
+				"videos": [
+					{
+						"title": "9 Foods To Avoid For High Blood Pressure",
+					    "url": "-azZelojQHc"
+					},
+					{
+						"title": "High Blood Pressure Basics",
+					    "url": "=mjTMZ_sm0LQ"
+					},
+					{
+						"title": "How To Overcome High Blood Pressure Naturally",
+					    "url": "=jDYm0i5zT68"
+					},
+					{
+						"title": "8 Steps to Lower Blood Pressure Naturally",
+					    "url": "=wZvZwpNKR_c"
+					}
+				]
 
 			}
 		]
 	},
 	"identify":{
 		"title": "Parts of a blood Pressure Machine",
-		"instructions": "Click any of the dots to learn more about the components of a blood pressure machine.",
+		"instructions": "Click any of the links to learn more about the components of a blood pressure machine.",
 		"background": "../bp-map.png", 
 		"components":[
 		 {
@@ -150,7 +170,7 @@
 			"open": false,
 			"popover": "right",
 			"name":"Manometer",
-			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
+			"image": "https://www.prestigemedical.com/img/Aneroid_Anatomy.jpg",
 			"description": "The portion of the sphygmomanometer that measures the air pressure in mmHg. The aneroid contains a watch-like movement that measures the air pressure applied to the cuff. Within the gauge is a series of copper/berrylium diaphragms that expand when filled with air."
 		  },
 		  {
@@ -161,7 +181,7 @@
 			"open": false,
 			"popover": "top",
 			"name":"Bulb",
-			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
+			"image": "https://ae01.alicdn.com/kf/HTB1dzWnSVXXXXX3XVXXq6xXFXXXt/Manual-sphygmomanometer-spare-parts-latex-air-inflatable-bulb-air-Pump.jpg_640x640.jpg",
 			"description": "The bulb pumps air into the cuff. An end (check) valve prevents air from escaping. ADC’s latex-free bulbs are made from either spin cast PVC, or dip molded neoprene."
 		  },
 		  {
@@ -172,7 +192,7 @@
 			"open": false,
 			"popover": "right",
 			"name":"Valve",
-			"image": "https://sites.google.com/site/yalehappyproject/_/rsrc/1468740779245/volunteer-resources/how-to-take-blood-pressure-readings/step-by-step-guide/cuff.jpg?height=269&width=400",
+			"image": "http://haaswellnesscenters.com/wp-content/uploads/2013/06/blood-pressure.jpg",
 			"description": "The deflation valve allows for controlled deflation of the cuff – critical for accurate measurement. ADC’s ADFLOW valve is machined from solid brass and plated in both nickel and chrome."
 		  }
 		]

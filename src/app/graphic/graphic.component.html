@@ -9,13 +9,27 @@
         <div class="container">
           <h1 class="display-3">{{data?.identify?.title}}</h1>
           <p class="lead">{{data?.identify?.instructions}}</p>
+          <a class="btn btn-primary btn-lg" role="button" routerLink="/learn"><i class="fa fa-arrow-left"></i> Back to Learn</a>
+          <a class="btn btn-primary btn-lg" role="button" routerLink="/play">Next Lesson <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
-      <div class="overlay animated fadeIn" *ngIf="show==true"></div>
-      <button type="button" class="btn btn-primary" *ngFor="let c of data?.identify?.components; let i = index;" placement="{{c.popover}}" [ngStyle]="{'position': 'relative', 'top': c.position.y+'%', 'left': c.position.x+'%'}" ngbPopover="{{c.description}}" popoverTitle="{{c.name}}" triggers="mouseenter:mouseleave" (mouseleave)="show=!show" (mouseenter)="show=!show">
-        {{i+1}}. {{c.name}}
-      </button>
-      <div class="graphicBp"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" [closeOthers]="true">
+              <ngb-panel *ngFor="let c of data?.identify?.components; let i = index;" [ngClass]="{'active': i==currentIndex}" id="{{i}}">
+                <ng-template ngbPanelTitle>
+                  <span class="badge badge-pill badge-primary">{{i+1}}</span> {{c?.name}}
+                </ng-template>
+                <ng-template ngbPanelContent>
+                  {{c?.description}}
+                </ng-template>
+              </ngb-panel>
+            </ngb-accordion>
+          </div>
+          <div class="col-md-7"><img src="https://www.prestigemedical.com/img/Aneroid_Anatomy.jpg" class="img-fluid" /></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -24,6 +24,7 @@ import { HomeComponent } from './home/home.component';
 // Global sub directory path
 import { Global } from './global';
 import { AnalyzeComponent } from './analyze/analyze.component';
+import { SafePipe } from './safe.pipe';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { AnalyzeComponent } from './analyze/analyze.component';
     LoginComponent,
     MenuComponent,
     HomeComponent,
-    AnalyzeComponent
+    AnalyzeComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
