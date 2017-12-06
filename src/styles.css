@@ -68,7 +68,8 @@ a:hover{
 .jumbotron{
   /*background: #c9c1dc;*/
   background: url('assets/back.png') no-repeat center bottom;
-  background-clip: border-box;
+ /* background-clip: border-box; */
+  background-size: cover;
 }
 
 /* jumbotron heading */

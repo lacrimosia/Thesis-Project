@@ -22,7 +22,7 @@
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item" *ngIf="i==0">
-                <div class="container-fluid">
+                <div class="container">
                   <div class="row">
                     <div class="card-deck">
                       <div class="card" *ngFor="let info of slide?.information">
@@ -38,88 +38,111 @@
                 </div>
               </li>
               <li class="list-group-item" *ngIf="i==1">
-                <h3 class="card-title">Blood Pressure Readings</h3>
-                <p> Learn what’s considered normal, as recommended by the American Heart Association.</p>
-                <table class="table table-striped table-dark">
-                  <thead>
-                    <tr class="headingTable">
-                      <th scope="col">BLOOD PRESSURE CATEGORY</th>
-                      <th scope="col">SYSTOLIC mm Hg (upper number)</th>
-                      <th scope="col">DIASTOLIC mm Hg (lower number)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr id="row1">
-                      <td>NORMAL</td>
-                      <td>LESS THAN 120</td>
-                      <td>LESS THAN 80</td>
-                    </tr>
-                    <tr id="row2">
-                      <td>ELEVATED</td>
-                      <td>120-129</td>
-                      <td>LESS THAN 80</td>
-                    </tr>
-                    <tr id="row3">
-                      <td>HIGH BLOOD PRESSURE (stage 1)</td>
-                      <td>130-139</td>
-                      <td>80-89</td>
-                    </tr>
-                    <tr id="row4">
-                      <td>HIGH BLOOD PRESSURE (stage 2)</td>
-                      <td>140 OR HIGHER</td>
-                      <td>90 OR HIGHER</td>
-                    </tr>
-                    <tr id="row5">
-                      <td>HYPERTENSIVE CRISIS (Go to the doctor ASAP)</td>
-                      <td>HIGHER THAN 180</td>
-                      <td>HIGHER THAN 120</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <li class="list-group-item" *ngIf="i==1">
-                  <h3 class="card-title">{{slide?.information?.title}}</h3>
-                  <p>{{slide?.information?.description}}</p>
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="card-columns">
-                        <div class="card" *ngFor="let j of slide?.information?.levels">
-                          <div class="card-body">
-                            <img class="card-img-top" src="../thesis/assets/icons/{{j?.image}}" alt="Hypertension picture">
-                            <h4 class="card-title">{{j?.title}}</h4>
-                            <p class="card-text">{{j?.description}}</p>
-                            <a href="{{slide?.source}}" class="btn btn-primary" target="_blank">Learn more <i class="fa fa-arrow-right"></i></a>
-                          </div>
+                <div class="container">
+                  <div class="row">
+                    <h3>Blood Pressure Readings</h3>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <table class="table table-striped table-dark">
+                      <thead>
+                        <tr class="headingTable">
+                          <th scope="col">BLOOD PRESSURE CATEGORY</th>
+                          <th scope="col">SYSTOLIC mm Hg (upper number)</th>
+                          <th scope="col">DIASTOLIC mm Hg (lower number)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr id="row1">
+                          <td>NORMAL</td>
+                          <td>LESS THAN 120</td>
+                          <td>LESS THAN 80</td>
+                        </tr>
+                        <tr id="row2">
+                          <td>ELEVATED</td>
+                          <td>120-129</td>
+                          <td>LESS THAN 80</td>
+                        </tr>
+                        <tr id="row3">
+                          <td>HIGH BLOOD PRESSURE (stage 1)</td>
+                          <td>130-139</td>
+                          <td>80-89</td>
+                        </tr>
+                        <tr id="row4">
+                          <td>HIGH BLOOD PRESSURE (stage 2)</td>
+                          <td>140 OR HIGHER</td>
+                          <td>90 OR HIGHER</td>
+                        </tr>
+                        <tr id="row5">
+                          <td>HYPERTENSIVE CRISIS (Go to the doctor ASAP)</td>
+                          <td>HIGHER THAN 180</td>
+                          <td>HIGHER THAN 120</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item" *ngIf="i==1">
+                <div class="container">
+                  <div class="row">
+                    <h3 class="card-title">{{slide?.information?.title}}</h3>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="card-columns">
+                      <div class="card" *ngFor="let j of slide?.information?.levels">
+                        <div class="card-body">
+                          <img class="card-img-top" src="../thesis/assets/icons/{{j?.image}}" alt="Hypertension picture">
+                          <h4 class="card-title">{{j?.title}}</h4>
+                          <p class="card-text">{{j?.description}}</p>
+                          <a href="{{slide?.source}}" class="btn btn-primary" target="_blank">Learn more <i class="fa fa-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="list-group-item" *ngIf="i==2">
-                  <h3 class="card-title">{{slide?.heading}}</h3>
-                  <p>{{slide?.sub}}</p>
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="card-columns">
-                        <div class="card" *ngFor="let g of slide?.videos">
-                          <div class="card-body">
-                            <!--<div class="embed-responsive embed-responsive-16by9">
+                </div>
+              </li>
+              <li class="list-group-item" *ngIf="i==2">
+                <div class="container">
+                  <div class="row">
+                    <h3 class="card-title">{{slide?.heading}}</h3>
+                    <p>{{slide?.sub}}</p>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="card-columns">
+                      <div class="card" *ngFor="let g of slide?.videos">
+                        <div class="card-body">
+                          <!--<div class="embed-responsive embed-responsive-16by9">
                               <iframe class="embed-responsive-item" [src]="('https://www.youtube.com/watch?v=' + g?.url) | safe" allowfullscreen></iframe>
                             </div>-->
-                             <img class="card-img-top" src="../thesis/assets/movie.png" alt="Youtube file">
-                            <h4 class="card-title">{{g?.title}}</h4>
-                            <a href="https://www.youtube.com/watch?v={{g?.url}}" class="btn btn-primary" target="_blank"><i class="fa fa-link"></i> Watch Video</a>
-                          </div>
+                          <img class="card-img-top" src="../thesis/assets/movie.png" alt="Youtube file">
+                          <h4 class="card-title">{{g?.title}}</h4>
+                          <a href="https://www.youtube.com/watch?v={{g?.url}}" class="btn btn-primary" target="_blank"><i class="fa fa-link"></i> Watch Video</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="list-group-item" *ngIf="i==1">
-                  <cite>Table Source: <a href="http://www.heart.org/HEARTORG/Conditions/HighBloodPressure/KnowYourNumbers/Understanding-Blood-Pressure-Readings_UCM_301764_Article.jsp#.Whc8SDdryUk" target="_blank">link</a></cite>
-                </li>
-                <li class="list-group-item">
-                  <cite>Source: <a href="{{slide?.source}}" target="_blank">link</a></cite>
-                </li>
+                </div>
+              </li>
+              <li class="list-group-item" *ngIf="i==1">
+                <div class="container">
+                  <div class="row">
+                    <cite>Table Source: <a href="http://www.heart.org/HEARTORG/Conditions/HighBloodPressure/KnowYourNumbers/Understanding-Blood-Pressure-Readings_UCM_301764_Article.jsp#.Whc8SDdryUk" target="_blank">link</a></cite>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="container">
+                  <div class="row">
+                    <cite>Source: <a href="{{slide?.source}}" target="_blank">link</a></cite>
+                  </div>
+                </div>
+              </li>
             </ul>
             <div class="card-body">
             </div>
